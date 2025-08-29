@@ -1,0 +1,28 @@
+{
+    "actorSpecification": 1,
+    "name": "youtube-downloader-from-github",
+    "title": "YouTube Video Downloader",
+    "description": "Downloads a video from YouTube using its URL.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "python-start"
+    },
+    "input": {
+        "title": "YouTube Video URL Input",
+        "type": "object",
+        "schema": {
+            "properties": {
+                "videoUrl": {
+                    "title": "Video URL",
+                    "type": "string",
+                    "description": "The full URL of the YouTube video to download.",
+                    "editor": "textfield",
+                    "example": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                }
+            },
+            "required": [
+                "videoUrl"
+            ]
+        }
+    }
+}
